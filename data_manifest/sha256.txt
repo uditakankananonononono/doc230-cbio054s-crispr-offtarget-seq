@@ -1,0 +1,4 @@
+86d88947ef9c0a1b545814c4e4241e4f6103d15a4d056d697a4ea5b6017648a8  I_1_CIRCLE_seq_10gRNA_wholeDataset.csv
+2bd3860b7a78af42b1c1a29c13c16263d519e54b5b7829921d9e4fc8bba81049  II_5_Kleinstiver_5gRNA_wholeDataset.csv
+74fc9151fc175cf48aaf9712eeb1216ac42306a72453f041b17e8d6b9389097b  II_6_Listgarten_22gRNA_wholeDataset.csv
+source http://bio.info.uqam.ca/data/ (dagrate/public_data_crisprCas9; CIRCLE-seq Tsai 2017, GUIDE-seq Kleinstiver 2015, Listgarten 2018)

@@ -1,0 +1,6 @@
+shuffle fold 0 {'auprc': 0.0075, 'auroc': 0.5474, 'base': 0.00717}
+shuffle fold 1 {'auprc': 0.0109, 'auroc': 0.4224, 'base': 0.01325}
+shuffle fold 2 {'auprc': 0.0219, 'auroc': 0.6376, 'base': 0.01513}
+shuffle fold 3 {'auprc': 0.0072, 'auroc': 0.4378, 'base': 0.00839}
+shuffle fold 4 {'auprc': 0.0391, 'auroc': 0.6892, 'base': 0.02298}
+{'per_fold': [{'auprc': 0.0075, 'auroc': 0.5474, 'base': 0.00717}, {'auprc': 0.0109, 'auroc': 0.4224, 'base': 0.01325}, {'auprc': 0.0219, 'auroc': 0.6376, 'base': 0.01513}, {'auprc': 0.0072, 'auroc': 0.4378, 'base': 0.00839}, {'auprc': 0.0391, 'auroc': 0.6892, 'base': 0.02298}], 'mean_auroc': 0.5469, 'mean_auprc': 0.0173, 'mean_base': 0.01338}

@@ -6,3 +6,10 @@ All numbers from results/results.json (src/run.py, results/run.log). CIRCLE-seq:
 - S4 transfer CIRCLE-seq -> GUIDE-seq: Kleinstiver (54 positives) AUPRC B1/B2/CNN 0.116/0.113/0.118; Listgarten (56 positives) 0.037/0.057/0.081 (AUROC CNN 0.992). Positives are few, differences within noise except possibly Listgarten; no robust CNN advantage claimed.
 - S5 shuffle control (CNN, fold 0): AUPRC 0.011 vs base 0.007, AUROC 0.589 (slightly above chance, one fold only, noted). B2 negative ratio 1:1, 10:1, 50:1 AUPRC 0.095, 0.090, 0.084 (small effect).
 Limits: negatives are in-silico candidate sites; CIRCLE-seq is in vitro; guides few (10); 3 CNN epochs; no 3D or epigenomic features, which the parent project's title implies - not tested here at all.
+
+## Addendum: 5-fold shuffle control (requested after review; scripts src/shuffle5.py, src/shuffle5_seeds.py)
+Labels of the training set permuted, CNN trained as in S1, evaluated on the same held-out guides.
+- Seed set 0: per-fold AUROC 0.589, 0.408, 0.442, 0.533, 0.694 (mean 0.533); AUPRC 0.011, 0.010, 0.012, 0.010, 0.043 (base 0.007-0.023).
+- Seed set 1: AUROC 0.547, 0.422, 0.638, 0.438, 0.689 (mean 0.547); AUPRC 0.008-0.039.
+- A third seed set was killed by memory pressure (two jobs in parallel) and is not reported.
+Reading: the control does NOT return cleanly to 0.5. Fold-to-fold spread is large (0.41-0.69) and fold 4 gives about 0.69 in both seed sets, so part of the deviation is tied to that fold's test guides, not training noise. The cause is not established. For scale: real S1 AUPRC (0.28 mean) is far above every shuffled AUPRC (max 0.043), but the AUROC control means AUROC differences of ~0.1 on single folds should not be read as signal. No refit was done after seeing this.

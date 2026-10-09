@@ -1,0 +1,92 @@
+{
+ "E6": {
+  "<=3mm": {
+   "n": 4337,
+   "pos": 757,
+   "M": 0.5614007230670428,
+   "B2": 0.18916688693326555
+  },
+  ">3mm": {
+   "n": 580612,
+   "pos": 6614,
+   "M": 0.21968314697821284,
+   "B2": 0.06836544313121498
+  },
+  "gate_met": true
+ },
+ "E7": {
+  "per_guide": {
+   "GAACACAAAGCATAGACTGCNGG": {
+    "M": 0.16299954528019478,
+    "B2": 0.10479900080456889,
+    "pos": 379
+   },
+   "GACCCCCTCCACCCCGCCTCNGG": {
+    "M": 0.44314934042959475,
+    "B2": 0.1477651033430157,
+    "pos": 2513
+   },
+   "GAGTCCGAGCAGAAGAAGAANGG": {
+    "M": 0.24360939330371822,
+    "B2": 0.08070751497102813,
+    "pos": 383
+   },
+   "GGAATCCCTTCTGCAGCACCNGG": {
+    "M": 0.3651000140561032,
+    "B2": 0.13381249473083792,
+    "pos": 275
+   },
+   "GGCACTGCGGCTGGAGGTGGNGG": {
+    "M": 0.2257162174136419,
+    "B2": 0.05121316934916332,
+    "pos": 1064
+   },
+   "GGCCCAGACTGAGCACGTGANGG": {
+    "M": 0.24649567089048774,
+    "B2": 0.12295410439141405,
+    "pos": 247
+   },
+   "GGGAAAGACCCAGCATCCGTNGG": {
+    "M": 0.3291511001233141,
+    "B2": 0.10828639996564408,
+    "pos": 169
+   },
+   "GGGTGGGGGGAGTTTGCTCCNGG": {
+    "M": 0.30058971294690207,
+    "B2": 0.14680455064497117,
+    "pos": 910
+   },
+   "GGTGAGTGAGTGTGTGCGTGNGG": {
+    "M": 0.200378335574777,
+    "B2": 0.09356474909229104,
+    "pos": 1245
+   },
+   "GTTGCCCCACAGGGCAGTAANGG": {
+    "M": 0.199790092966098,
+    "B2": 0.05766304394781541,
+    "pos": 186
+   }
+  },
+  "M_wins": 10,
+  "n_guides": 10,
+  "gate_met": true
+ },
+ "E8": {
+  "auprc_25": 0.026380469061994545,
+  "auprc_50": 0.10930246605257068,
+  "auprc_100": 0.2372939289243388,
+  "gate_met": true
+ },
+ "E9": {
+  "ece": 0.026620680461699804,
+  "mean_pred": 0.03917946293950081,
+  "true_rate": 0.012601098557310125
+ },
+ "E10": {
+  "auprc_original": 0.2372939289243388,
+  "auprc_shuffled_guide": 0.08204638002715625,
+  "drop": 0.15524754889718254,
+  "gate_met": true
+ },
+ "pooled_note": "AUPRC pooled over all cold-guide OOF rows (original S1 reported mean of per-fold AUPRC); pooled numbers are not directly comparable to S1"
+}
